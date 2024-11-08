@@ -1,0 +1,76 @@
+def test_minimum_grid_size():
+    # 1. Minimum grid size (3x3)
+    grid = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+    ]
+    assert maxSum(grid) == 35, "Test Case 1 Failed"
+
+def test_single_hourglass_in_large_grid():
+    # 2. Single hourglass in a 4x4 grid
+    grid = [
+        [1, 2, 3, 4],
+        [0, 1, 0, 0],
+        [2, 1, 2, 1],
+        [0, 0, 0, 1]
+    ]
+    assert maxSum(grid) == 10, "Test Case 2 Failed"
+
+def test_multiple_hourglasses_standard_grid():
+    # 3. Multiple hourglasses in a 6x6 grid
+    grid = [
+        [1, 2, 3, 0, 0, 0],
+        [0, 1, 0, 2, 0, 0],
+        [1, 2, 3, 4, 5, 6],
+        [0, 0, 0, 2, 1, 0],
+        [1, 1, 1, 1, 1, 1],
+        [2, 2, 2, 2, 2, 2]
+    ]
+    assert maxSum(grid) == 19, "Test Case 3 Failed"
+
+def test_negative_values():
+    # 4. Grid with negative values
+    grid = [
+        [-1, -2, -3, -4, -5, -6],
+        [-1, -2, -3, -4, -5, -6],
+        [-1, -2, -3, -4, -5, -6],
+        [-1, -2, -3, -4, -5, -6],
+        [-1, -2, -3, -4, -5, -6],
+        [-1, -2, -3, -4, -5, -6]
+    ]
+    assert maxSum(grid) == -7, "Test Case 4 Failed"
+
+def test_all_zeros():
+    # 5. Grid with all zeros
+    grid = [
+        [0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0]
+    ]
+    assert maxSum(grid) == 0, "Test Case 5 Failed"
+
+def test_maximum_values():
+    # 6. Grid with maximum values
+    grid = [
+        [9, 9, 9, 9, 9, 9],
+        [9, 9, 9, 9, 9, 9],
+        [9, 9, 9, 9, 9, 9],
+        [9, 9, 9, 9, 9, 9],
+        [9, 9, 9, 9, 9, 9],
+        [9, 9, 9, 9, 9, 9]
+    ]
+    assert maxSum(grid) == 63, "Test Case 6 Failed"
+
+# Running all test functions
+def run_all_tests():
+    test_minimum_grid_size()
+    test_single_hourglass_in_large_grid()
+    test_multiple_hourglasses_standard_grid()
+    test_negative_values()
+    test_all_zeros()
+    test_maximum_values()
+    print("All test cases passed!")
