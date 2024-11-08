@@ -1,0 +1,10 @@
+def commonFactors(a: int, b: int) -> int:
+    gcd = min(a, b)
+    count = 0
+    for i in range(1, gcd + 1):
+        if a % i == 0 and b % i == 0:
+            count += 1
+    return count
+
+
+https://chatgpt.com/share/672e1fff-2c10-8007-a6dd-4cb118617d33
