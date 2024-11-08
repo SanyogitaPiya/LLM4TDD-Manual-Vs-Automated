@@ -1,0 +1,25 @@
+def minimizeXOR(num1, num2):
+    # Get the number of 1's in the binary representation of num2
+    bit_count_num2 = bin(num2).count('1')
+    
+    # If num1 already has the same number of 1's, return num1 directly
+    if bin(num1).count('1') == bit_count_num2:
+        return num1
+    
+    # Initialize two candidates: one upwards and one downwards
+    result_up = num1
+    result_down = num1
+    
+    # Find the next number upwards with the same number of 1's
+    while bin(result_up).count('1') != bit_count_num2:
+        result_up += 1
+    
+    # Find the next number downwards with the same number of 1's
+    while result_down > 0 and bin(result_down).count('1') != bit_count_num2:
+        result_down -= 1
+    
+    # Choose the number that is closest to num1
+    if abs(result_up - num1) <= abs(result_down - num1):
+        return result_up
+    else:
+        return result_down
