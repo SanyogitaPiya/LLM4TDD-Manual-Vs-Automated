@@ -1,0 +1,23 @@
+def test_min_values():
+    assert code2427(1, 1) == 1, "Test Case 1 Failed"
+
+def test_one_is_min_other_is_large():
+        assert code2427(1, 1000) == 1, "Test Case 2 Failed"
+
+def test_both_prime_numbers():
+        assert code2427(17, 29) == 1, "Test Case 3 Failed"
+
+def test_one_is_multiple_of_other():
+    assert code2427(10, 5) == 2, "Test Case 4 Failed"
+
+def test_both_numbers_are_large_composite():
+    assert code2427(1000, 500) == 6, "Test Case 5 Failed"
+
+def test_same_large_numbers():
+    assert code2427(1000, 1000) == 16, "Test Case 6 Failed"
+
+def test_no_common_factors_besides_one():
+     assert code2427(14, 25) == 1, "Test Case 7 Failed"
+
+def test_large_and_small_prime():
+     assert code2427(101, 2) == 1, "Test Case 8 Failed"
