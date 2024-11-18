@@ -27,3 +27,5 @@ differ, which covers the major task of boundary value analysis.
 The only challenge with partition testing is that in order to
 effectively create partitions, it often requires deep knowledge
 of the problem domain.
+
+![image](https://github.com/user-attachments/assets/b3cb473d-37a3-409c-bf28-0bd7a0925af4)
