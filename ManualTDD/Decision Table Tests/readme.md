@@ -11,3 +11,5 @@ is covered, providing the LLM with a comprehensive set of
 scenarios to generate code for. This method is especially useful
 for problems with multiple decision paths, such as dynamic
 programming or branching algorithms.
+
+![image](https://github.com/user-attachments/assets/abb353a0-5c8c-451f-ad0f-e329ea683cf3)
