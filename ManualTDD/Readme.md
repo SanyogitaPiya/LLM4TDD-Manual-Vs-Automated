@@ -10,12 +10,13 @@ Finding 2: Test generation methods that focus on out-lining specific “importan
 
 Finding 3: Boundary value analysis is the best choice for manual test generation to achieve accurate code. However, at large, manually generated test produce a high accuracy, although the number of prompts, and thus tests, varies.
 
-![image](https://github.com/user-attachments/assets/b71b2076-48d9-412b-b83a-408b065d621e)
+![image](https://github.com/user-attachments/assets/492855da-72a3-46ce-b59c-16c5980bc052)
+
 
 Finding 4: The performance of BVA within the LLM4TDD workflow benefits from the simpler problems that BVA can capture well. When applicable, decision tables and state transition testing have a good performance,
 given the underlying complexity of the problems these test generation strategies can effectively capture.
 
 Figure: Test to Prompt Ratio
 
-![image](https://github.com/user-attachments/assets/3e37c86d-2ae7-4c04-834a-5e5e892f7653)
+![image](https://github.com/user-attachments/assets/94e3b64f-2143-4db1-82f7-46c91df4a266)
 
