@@ -7,3 +7,5 @@ errors at these boundary points where behavior might change.
 These boundaries often expose issues related to off-by-one
 errors, array overflows, or incorrect handling of upper and
 lower limits.
+
+![image](https://github.com/user-attachments/assets/6398ed30-7038-45e3-babb-38cecbca6826)
