@@ -16,5 +16,6 @@ Finding 4: The performance of BVA within the LLM4TDD workflow benefits from the 
 given the underlying complexity of the problems these test generation strategies can effectively capture.
 
 Figure: Test to Prompt Ratio
+
 ![image](https://github.com/user-attachments/assets/3e37c86d-2ae7-4c04-834a-5e5e892f7653)
 
